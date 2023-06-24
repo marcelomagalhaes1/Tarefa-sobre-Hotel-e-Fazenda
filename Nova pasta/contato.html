@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Fazenda Magalhães</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+
+</head>
+
+<body>
+  <header>
+    <div>
+      
+    </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lojas.html">Atrações</a></li>
+      <li><a href="eventos.html">Funcionamento</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+  </header>
+  <div class="grid-container">
+        <aside class="left-aside">
+
+    </aside>
+
+    <section class="main-section">
+      <form method="post" id="f_contato" action="">
+        <fieldset id="id_usuario">
+          <legend>IDENTIFICAÇÃO DO USUÁRIO</legend>
+          <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="100" maxlength="50" placeholder="Nome Completo"></p>
+          <p><label>e-mail:</label><input type="email" name="tEmail" id="cEmail" size="25" maxlength="40" placeholder="e-mail válido"></p>
+          <fieldset id="sexo_usuario">
+            <legend>SEXO</legend>
+            <p><input type="radio" name="rSexo" id="cMasc"><label for="cMasc">Masculino</label></p>
+            <p><input type="radio" name="rSexo" id="cFem"><label for="cFem">Feminino</label></p>
+            <p><input type="radio" name="rSexo" id="cFem"><label for="cFem">Não desejo comentar</label></p>
+            <p><label>Data de Nascimento</label><input type="date" name="dDate" id="cDate"></p>
+          </fieldset>
+        </fieldset>
+
+        <fieldset id="end_usuario">
+          <legend>ENDEREÇO DO USUÁRIO</legend>
+          <p><label>Logradouro:</label><input type="text" name="tLogra" id="cLogra" size="100" maxlength="50" placeholder="Rua, Avenida, Praça, Beco..."></p>
+          <p><label>Bairro:</label><input type="text" name="tBairro" id="cBairro" size="100" maxlength="50" placeholder="Bairro, Destriro, Chácara ..."></p>
+          <p><label>Número:</label><input type="number" name="nNum" id="cNum" min="0" max="9999"></p>
+          <p><label>Complemento:</label><input type="text" name="tComp" id="cComp" size="50" maxlength="50" placeholder="Apto, Conjunto, Edfício ..."></p>
+          <p><label>Cidade:</label><input type="text" name="tCid" id="cCid" maxlength="50" size="30" placeholder="Cidade de Nascimento" list="cidades"></p>
+          <datalist id="cidades">
+            <option value="Goiânia"></option>
+            <option value="Morrinhos"></option>
+            <option value="Caldas Novas"></option>
+            <option value="Rio Quente"></option>
+            <option value="Goiatuba"></option>
+          </datalist>
+          <p><label for="cEst">Estado:</label>
+          <select name="tEst" id="cEst">
+            <optgroup label="Região Centro-Oeste">
+              <option>Distrito Federal</option>
+              <option selected>Góias</option>
+              <option>Mato Grosso</option>
+              <option>Mato Grosso do Sul</option>
+            </optgroup>
+            <optgroup label="Região Sul">
+              <option>Paraná</option>
+              <option>Santa Catarina</option>
+              <option>Rio Grande do Sul</option>
+            </optgroup>
+          </select></p>
+        </fieldset>
+
+        <fieldset id="msn_usuario">
+          <legend>ESCREVA SUA MENSAGEM</legend>
+          <p><label>Mensagem:</label></p>
+          <textarea name="tMsn" id="CMsn" cols="50" rows="10" maxlength="100"></textarea>
+        </fieldset>
+          
+        </fieldset>
+        <input type="submit" name="bSub" id="btnSub" value="Enviar">
+      </form>
+    </section>
+
+    <aside class="right-aside">
+      
+      <ul>
+        <li><a href="http://www.facebook.com" target="self_"><img src="imagens/face.png" alt="Facebook" class="logo"></a></li>
+        <li><a href="http://www.instagram.com"><img src="imagens/insta.webp" alt="Instagram" class="logo"></a></li>
+        </a></li>
+        <li><a href="http://www.discord.com"><img src="imagens/dis.png" alt="Discord" class="logo"></a></li>
+        <li><a href="http://www.tiktok.com"><img src="imagens/tiktok.png" alt="Tiktok" class="logo"></a></li>
+        <li><a href="http://www.twitter.com"><img src="imagens/twiter.jpg" alt="Twitter" class="logo"></a></li>
+        <li><a href="http://www.whatsapp.com"><img src="imagens/whats.png" alt="Whatsapp" class="logo"></a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <p class="roda_pe">Endereço: Rua Maestro Vicente José Vieira<br> Morrinhos - GO</p>
+    <p class="roda_pe">Telefone: (64) 1234-5678</p>
+  </footer>
+</body>
+
+</html>
